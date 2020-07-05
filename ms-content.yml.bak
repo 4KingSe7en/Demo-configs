@@ -1,4 +1,8 @@
+server:
+  port: 8679
 spring:
+  application:
+    name: ms-content
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/news?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false
     username: root
