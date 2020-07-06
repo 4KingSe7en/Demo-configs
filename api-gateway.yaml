@@ -24,7 +24,7 @@ spring:
         predicates:
           - Path=/app/**
         filters:
-          - StripPrefix=1
+#          - StripPrefix=1
           - JWTFilter=RSA256,HS256
           - RemoveResponseHeader=X-Powered-By
       # admin web layer
@@ -33,7 +33,7 @@ spring:
         predicates:
           - Path=/admin/**
         filters:
-          - StripPrefix=1
+#          - StripPrefix=1
           - JWTFilter=RSA256,HS256
           - RemoveResponseHeader=X-Powered-By
 
