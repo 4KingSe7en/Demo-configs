@@ -12,6 +12,11 @@ spring:
         uri: lb://auth-server/login
         predicates:
           - Path=/login/**
+          
+      - id: user-regist
+        uri: lb://app-web/user
+        predicates:
+          - Path=/user/**
 
       # app web layer
       - id: app-web
